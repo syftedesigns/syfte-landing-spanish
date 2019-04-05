@@ -1,0 +1,124 @@
+<div class="space-30"></div>
+<section class="bg-contact wow slideInUp">
+    <figure class="d-none d-xl-block wow slideInLeft">
+        <img class="w-25 visual-employer-mg" src="./assets/images/desktop/contact-graphic.png" alt="syfte_building">
+    </figure>
+    <div class="container">
+        <div class="row d-none d-md-block">
+            <div class="col-sm text-center">
+                <div class="space-50"></div>
+                <h1 class="LinotteLight font-55 about-title text-uppercase text-white">
+                    ¿Cúal es <br> tu historia?
+                </h1>
+                <article>
+                    <div style="position: relative; left: -0.5em;" class="col-xl-6 text-center offset-xl-3">
+                        <p class="LinotteLight font-20 text-color about-texts text-white">
+                            <strong>Si tienes alguna pregunta, te gustaría charlar acerca de una idea o simplemente quieres decir Hola!</strong>, no hay nada que nos guste más que hablar. Cuéntanos un poco acerca de ti y te enviaremos un mensaje de vuelta
+                            tan pronto como podamos.
+                        </p>
+                    </div>
+                </article>
+                <img matTooltip="3250 NE 1st Ave. Suite 305 Caracas, 33137" aria-label="Button that displays a tooltip when focused or hovered over" class="zone" src="./assets/images/desktop/pointer.png" alt="syfte_location">
+                <div class="space-20"></div>
+                <div class="col-sm text-center">
+                    <form id="storyFormContactDesktop" ngNativeValidate #formContact="ngForm" (ngSubmit)="sendForm(formContact);">
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="name" ngModel required type="text" matInput placeholder="Nombre completo">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="phone" ngModel required type="number" matInput placeholder="Teléfono">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="email" ngModel required type="email" matInput placeholder="Correo electrónico">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <textarea name="message" ngModel required class="textarea" matInput placeholder="Consulta"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="LinotteLight font-18 text-uppercase w-25 button-form" mat-raised-button color="warn">
+                                Vamos a ello!
+                            </button>
+                        </div>
+                    </form>
+                    <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile contact -->
+        <div class="space-120 d-md-none"></div>
+        <div class="row d-md-none">
+            <div class="col text-center">
+                <h1 class="LinotteLight font-45 about-title text-uppercase text-white">
+                    ¿Cúal es <br> tu historia?
+                </h1>
+                <div class="space-10"></div>
+                <article>
+                    <p class="LinotteLight font-16 text-color about-texts text-white">
+                        <strong>Si tienes alguna pregunta, te gustaría charlar acerca de una idea o simplemente quieres decir Hola!</strong>, no hay nada que nos guste más que hablar. Cuéntanos un poco acerca de ti y te enviaremos un mensaje de vuelta
+                        tan pronto como podamos.
+                    </p>
+                    <div class="space-30"></div>
+                    <img matTooltip="3250 NE 1st Ave. Suite 305 Caracas, 33137" aria-label="Button that displays a tooltip when focused or hovered over" class="w-25" src="./assets/images/mobile/pointer.png" alt="syfte_location">
+                </article>
+            </div>
+        </div>
+        <div class="space-30"></div>
+        <div class="row d-md-none">
+            <div class="col text-center">
+                <form id="storyFormContactResponsive" ngNativeValidate #formMobile="ngForm" (ngSubmit)="sendForm(formMobile);">
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Nombre Completo</mat-label>
+                                <input ngModel name="name" required type="text" matInput>
+                                <mat-icon matSuffix>account_circle</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Teléfono</mat-label>
+                                <input ngModel name="phone" required type="number" matInput>
+                                <mat-icon matSuffix>smartphone</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Correo Electrónico</mat-label>
+                                <input ngModel name="email" required type="email" matInput>
+                                <mat-icon matSuffix>email</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Consulta</mat-label>
+                                <textarea ngModel name="message" required class="textarea" matInput></textarea>
+                                <mat-icon matSuffix>insert_comment</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="LinotteLight font-18 text-uppercase w-50 button-form" mat-raised-button color="warn">
+                            Vamos a ello!
+                        </button>
+                    </div>
+                </form>
+                <div class="space-30"></div>
+            </div>
+        </div>
+        <!-- end mobile contact-->
+    </div>
+</section>

@@ -1,0 +1,58 @@
+#marketing {
+    background-image: url(../../../../../assets/images/desktop/Muneco1-02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-color {
+    color: #6c6770
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .mkt-bg {
+        position: absolute;
+        width: 130%;
+        left: -20%;
+    }
+    .mkt-employer {
+        position: relative;
+        left: -35%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .mkt-employer {
+        position: relative;
+        left: -38%;
+    }
+    .mkt-bg {
+        position: absolute;
+        width: auto;
+        left: -20%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .margin-section {
+        margin-left: 1em
+    }
+    .bg-margin {
+        margin-left: -2em
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1480px) {
+    #sticky {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .desktop-tablet-h {
+        position: relative;
+        top: -1.5em !important
+    }
+    .mg-section {
+        margin-top: -5%
+    }
+}

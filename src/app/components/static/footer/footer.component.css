@@ -1,0 +1,138 @@
+.footer-mat {
+    width: 100%
+}
+
+.bg-footer {
+    background-color: #363839 !important
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'LinotteLight', serif;
+    font-size: 14px
+}
+
+a:hover {
+    color: #a0b5c2
+}
+
+@media only screen and (min-width: 1200px) {
+    .form-mg {
+        position: relative;
+        left: 1em;
+    }
+    .social-ig {
+        position: relative;
+        left: 45%;
+    }
+    .social-fb {
+        position: relative;
+        left: -45%;
+    }
+    .tel {
+        margin-left: -80%
+    }
+    .address {
+        position: relative;
+        left: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+    .btn-newsletter {
+        margin-left: 35%
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+    .form-mg {
+        position: relative;
+        left: 5% !important;
+    }
+    .footer-mat {
+        width: 90% !important
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1380px) {
+    .btn-newsletter {
+        margin-left: 80%
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .btn-newsletter {
+        margin-left: -15%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .social-ig {
+        position: relative;
+        left: 60%;
+    }
+    .social-fb {
+        position: relative;
+        left: -60%;
+    }
+    .form-mg {
+        position: relative;
+        left: 3%;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .btn-tablet {
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .input-newsletter {
+        width: 150%
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .social-ig {
+        position: relative;
+        left: 2.3em;
+    }
+    .social-fb {
+        position: relative;
+        left: -2.3em;
+    }
+    .form-newsletter-mobile {
+        margin-left: 5%
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 380px) {
+    .social-ig {
+        position: relative;
+        left: 2.8em;
+    }
+    .social-fb {
+        position: relative;
+        left: -2.8em;
+    }
+    .form-newsletter-mobile {
+        margin-left: 10%
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 480px) {
+    .social-ig {
+        position: relative;
+        left: 4em;
+    }
+    .social-fb {
+        position: relative;
+        left: -4em;
+    }
+    .form-newsletter-mobile {
+        margin-left: 16%
+    }
+}

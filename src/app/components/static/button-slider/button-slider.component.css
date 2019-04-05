@@ -1,0 +1,113 @@
+@media only screen and (min-width:1200px) {
+    .margin-social {
+        position: relative;
+        left: 1.8em;
+    }
+    .arrows {
+        float: right;
+        position: relative;
+        left: 15em;
+        margin-top: 0.5em
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1480px) {
+    .static-margin {
+        position: relative;
+        top: -1em;
+        z-index: 1000;
+    }
+    .pointer-mg {
+        margin-left: 105%;
+        margin-top: -30%
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {
+    .pointer-mg {
+        margin-left: 100%;
+        margin-top: -30%
+    }
+}
+
+@media only screen and (min-width: 1485px) and (max-width: 1599px) {
+    .pointer-mg {
+        margin-left: 110%;
+        margin-top: -30%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .point-mg {
+        position: relative;
+        left: 1.5em !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mobile-mg {
+        margin-left: -2em;
+        position: relative;
+        left: 15%;
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 375px) {
+    .mobile-mg {
+        position: relative;
+        left: 1em;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    .mobile-mg {
+        position: relative;
+        left: 2em;
+    }
+}
+
+@media only screen and (min-width: 1600px) {}
+
+@media only screen and (max-height: 800px) {
+    .none-sm-h {
+        display: none;
+    }
+    .mg-h {
+        margin-left: 60%
+    }
+    .row-h {
+        margin-top: -15% !important
+    }
+}
+
+.pointer-left {
+    margin-left: 1em
+}
+
+
+/*
+margin-left: 170%;
+margin-top: -130%
+*/
+
+.pointer-config {
+    display: block;
+    position: absolute;
+    float: right;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 1600px) {
+    .pointer-mg {
+        margin-left: 170%;
+        margin-top: -130%
+    }
+}
+
+.noActive {
+    color: #c9c7c7
+}
+
+.active {
+    color: #4c4c4c
+}

@@ -1,0 +1,76 @@
+<!-- static buttons for all sliders -->
+<!-- on desktop -->
+<section class="d-none d-xl-block wow slideInUp static-margin row-h">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm text-center offset-xl-4 margin-social">
+                    <div class="row">
+                        <div class="col-xl-2 none-sm-h">
+                            <a href="https://www.instagram.com/syftedesigns/?hl=es" target="_blank" title="Syfte Instagram">
+                                <img class="ig-social" src="./assets/images/desktop/ig.png" alt="syfte_ig">
+                            </a>
+                        </div>
+                        <div class="col-xl-2 none-sm-h">
+                            <a href="https://twitter.com/DesignsSyfte" target="_blank" title="Syfte Twitter">
+                                <img class="tw-social" src="./assets/images/desktop/tw.png" alt="syfte_twitter">
+                            </a>
+                        </div>
+                        <div class="col-xl-2 none-sm-h">
+                            <a href="https://www.facebook.com/syftedesigns/" target="_blank" title="Syfte Facebook">
+                                <img class="fb-social" src="./assets/images/desktop/fb.png" alt="syfte_facebook">
+                            </a>
+                        </div>
+                        <div class="col-xl">
+                            <div class="container">
+                                <div class="row pointer-config pointer-mg">
+                                    <div *ngFor="let _pointer of _paginator._slideIems; let i = index" class="col-sm text-center">
+                                        <i (click)="changeToPageWithPoint(i);" [ngClass]="{active: i === currentPage, noActive: i !== currentPage}" class="material-icons pointer">
+                                          brightness_1
+                                      </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-150"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end desktop -->
+<!-- tablet -->
+<section class="d-none d-md-block d-xl-none wow slideInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center offset-md-3 point-mg">
+                <div class="row">
+                    <div *ngFor="let _pointer of _paginator._slideIems; let i = index" class="col-md-0 pointer-left">
+                        <i (click)="changeToPageWithPoint(i);" [ngClass]="{active: i === currentPage, noActive: i !== currentPage}" class="material-icons pointer">
+                          brightness_1
+                      </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end tablet -->
+<!-- mobile -->
+<section class="d-md-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-0 text-center mobile-mg">
+                <div class="row">
+                    <div *ngFor="let _pointer of _paginator._slideIems; let i = index" class="col-0 pointer-left">
+                        <i (click)="changeToPageWithPoint(i);" [ngClass]="{active: i === currentPage, noActive: i !== currentPage}" class="material-icons pointer">
+                              brightness_1
+                      </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end mobile -->

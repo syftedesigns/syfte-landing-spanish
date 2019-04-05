@@ -1,0 +1,90 @@
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .mkt-bg {
+        position: absolute;
+        left: -10%;
+    }
+    .mkt-employer {
+        position: absolute;
+        margin-left: 105%;
+        margin-top: -40%
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .mkt-employer {
+        position: absolute;
+        margin-left: 115%;
+        margin-top: -20%
+    }
+    .mkt-bg {
+        position: absolute;
+        width: auto;
+        left: -2%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .margin-section {
+        margin-left: 1em
+    }
+    .bg-margin {
+        margin-left: -2em
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1480px) {
+    #sticky {
+        display: none !important;
+    }
+    .none-1480 {
+        display: none !important;
+    }
+    .show-lgdesktop {
+        margin-top: 106em !important
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .none-1600 {
+        display: none !important
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+    .footer-bck {
+        margin-top: -7%
+    }
+    .mnc-width {
+        width: 60%;
+        margin-left: 85% !important
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .footer-bck {
+        margin-top: -8.5%
+    }
+    .mnc-width {
+        width: 40%;
+        margin-left: 110% !important
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .footer-bck {
+        margin-top: -20.5% !important
+    }
+    .no-emp {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .desktop-tablet-h {
+        position: relative;
+        top: -3.5em
+    }
+    .mg-section {
+        margin-top: -8%
+    }
+}

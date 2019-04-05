@@ -1,0 +1,103 @@
+<section class="hover-hidden">
+    <div class="space-120 d-none d-xl-block"></div>
+    <div class="space-50 d-none d-md-block d-xl-none"></div>
+    <div class="space-80 d-md-none"></div>
+    <div class="container">
+        <div class="row attach-mg">
+            <div class="col-sm text-center">
+                <figure [routerLink]="['/']" class="d-none d-xl-block wow slideInDown">
+                    <img title="Syfte Home" src="./assets/images/desktop/logo-02-2.png" alt="syfte_brand">
+                </figure>
+                <h1 class="LinotteRegular font-45 contact-title text-uppercase d-none d-xl-block wow slideInLeft">
+                    ¿En qué <br> podemos ayudarte?
+                </h1>
+                <h1 class="LinotteRegular font-25 contact-title text-uppercase d-none d-md-block d-xl-none wow slideInLeft">
+                    ¿En qué <br> podemos ayudarte?
+                </h1>
+                <h1 class="LinotteRegular font-25 contact-title text-uppercase d-md-none wow slideInLeft">
+                    ¿En qué <br> podemos ayudarte?
+                </h1>
+                <div class="space-20"></div>
+                <form id="formContact" ngNativeValidate (ngSubmit)="ProposalData(formProposal);" #formProposal="ngForm" class="wow slideInUp">
+                    <div class="form-group">
+                        <mat-form-field class="form-mat my-contact-field LinotteRegular font-18">
+                            <input ngModel name="name" type="text" required matInput placeholder="Nombre completo">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="form-mat form-mat my-contact-field LinotteRegular font-18">
+                            <input type="email" name="email" ngModel required matInput placeholder="Correo electrónico">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="form-mat form-mat my-contact-field LinotteRegular font-18">
+                            <input type="number" name="phone" ngModel required matInput placeholder="Teléfono">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="form-mat form-mat my-contact-field LinotteRegular font-18">
+                            <mat-select name="service" ngModel required placeholder="Necesito">
+                                <mat-option value="1">Desarrollo de Apps</mat-option>
+                                <mat-option value="2">Marketing</mat-option>
+                                <mat-option value="3">Branding</mat-option>
+                                <mat-option value="4">Desarrollo Web</mat-option>
+                                <mat-option value="5">Diseño Web</mat-option>
+                                <mat-option value="6">Diseño UX/UI</mat-option>
+                                <mat-option value="7">SEO & SEMM</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="form-mat form-mat my-contact-field LinotteRegular font-18">
+                            <input type="text" name="country" ngModel required matInput placeholder="País">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <h5 class="LinotteRegular contact-texts">
+                                    <span *ngIf="!attached">
+                                      Adjunta tu archivo
+                                  </span>
+                                    <span *ngIf="attached">
+                                      {{FileName}}
+                                  </span>
+                                </h5>
+                            </div>
+                            <div class="col-xl-4">
+                                <button id="btn-file" [disabled]="loading" type="button" (click)="TriggerFile('fileAttach');" matTooltip="Suba archivos describiendo sus ideas, logros, objetivos, propuestas o requerimientos para poder estar mejor informado sobre su proyecto" aria-label="Button that displays a tooltip when focused or hovered over"
+                                    class="btn-block contact-buttons" mat-raised-button color="primary">
+                                <mat-icon>cloud_upload</mat-icon>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="form-group text-center">
+                        <button id="contactPageSubmit" [disabled]="loading" type="submit" class="text-uppercase col-xl-2  LinotteRegular font-18 contact-buttons" mat-raised-button color="primary">
+                          <span *ngIf="!loading">
+                              ENVIAR
+                          </span>
+                          <mat-spinner  class="offset-md-5 offset-5 offset-xl-0 spinner-mg" [diameter]="40" color="warn" *ngIf="loading"></mat-spinner>
+                       </button>
+                    </div>
+                    <div class="space-120 no-mobile-sm"></div>
+                    <div class="space-200 no-mobile-xl"></div>
+                    <div class="space-50 standard"></div>
+                    <fieldset style="display: none">
+                        <input ngModel (change)="FileAttachment($event.target.files[0]);" id="fileAttach" name="attachment" type="file">
+                        <input name="fileName" [(ngModel)]="FileName" type="hidden">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm text-center bg-mobile pointer d-md-none">
+                <img matTooltip="3250 NE 1st Ave. Suite 305 Caracas, 33137. info@syftedesigns.com. +5804129986237" aria-label="Button that displays a tooltip when focused or hovered over" class="offset-xl-8 zone zone-position wow bounceIn" src="./assets/images/desktop/pointer.png"
+                    alt="syfte_location">
+            </div>
+            <div class="col-sm text-center bg-mobile d-none d-md-block">
+                <img matTooltip="3250 NE 1st Ave. Suite 305 Caracas, 33137. info@syftedesigns.com. +5804129986237" aria-label="Button that displays a tooltip when focused or hovered over" class="offset-xl-8 zone zone-position wow bounceIn" src="./assets/images/desktop/pointer.png"
+                    alt="syfte_location">
+            </div>
+        </div>
+    </div>
+</section>

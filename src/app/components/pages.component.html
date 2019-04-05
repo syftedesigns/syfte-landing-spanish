@@ -1,0 +1,12 @@
+<!-- menu -->
+<app-menu></app-menu>
+<!-- end menu -->
+<div *ngIf="!_menu.OnPopup" class="wrapper">
+    <router-outlet></router-outlet>
+</div>
+<!-- contact -->
+<app-contact-history *ngIf="!_contact.FormSent"></app-contact-history>
+<!-- end contact -->
+<!-- footer -->
+<app-footer *ngIf="!_contact.FormSent"></app-footer>
+<!-- end footer -->

@@ -1,0 +1,165 @@
+<section class="bg-footer hover-hidden wow fadeInUp">
+    <div class="space-80"></div>
+    <div class="container d-none d-md-block">
+        <div class="row">
+            <div class="col-sm text-center">
+                <h1 class="LinotteLight font-22 text-white">
+                    Suscribete a nuestro newsletter
+                </h1>
+            </div>
+            <div class="space-30"></div>
+        </div>
+        <div class="space-50"></div>
+        <!-- newsletter -->
+        <form id="formNewsletterDesktop" (ngSubmit)="RegisterNewsletter(newsletterDesktop);" ngNativeValidate #newsletterDesktop="ngForm">
+            <div class="form-row text-center">
+                <div class="col-md-6 offset-md-3 form-mg notebook-2">
+                    <mat-form-field class="footer-mat text-white LinotteRegular font-18 my-form-field">
+                        <input ngModel name="email" required type="email" matInput placeholder="Correo electrónico">
+                    </mat-form-field>
+                </div>
+                <div style="position: absolute" class="col-md-5 offset-xl-3 offset-md-5">
+                    <button type="submit" class="LinotteRegular font-weight-bold btn-newsletter btn-tablet" mat-raised-button>Suscribirme</button>
+                </div>
+            </div>
+        </form>
+        <!-- end newsletter-->
+        <div class="space-50"></div>
+        <div class="row">
+            <div class="col-sm text-center">
+                <div class="row offset-xl-4 offset-md-1">
+                    <div class="col-sm col-xl-2">
+                        <a href="https://www.instagram.com/syftedesigns/?hl=es" target="_blank">
+                            <img class="w-75 social-ig d-none d-xl-block ig-social" src="./assets/images/desktop/instagram-white-05.png" alt="syfte_instagram_profile">
+                            <img class="w-50 social-ig d-none d-md-block d-xl-none ig-social" src="./assets/images/tablet/instagram-white-05.png" alt="syfte_instagram_profile">
+                        </a>
+                    </div>
+                    <div class="col-sm col-xl-2">
+                        <a href="https://twitter.com/DesignsSyfte" target="_blank">
+                            <img class="w-75 d-none d-xl-block tw-social" src="./assets/images/desktop/twitter-white-05.png" alt="syfte_twitter_profile">
+                            <img class="w-50 d-none d-md-block d-xl-none tw-social" src="./assets/images/tablet/twitter-white-05.png" alt="syfte_twitter_profile">
+                        </a>
+                    </div>
+                    <div class="col-sm col-xl-2">
+                        <a href="https://www.facebook.com/syftedesigns/" target="_blank">
+                            <img class="w-75 social-fb d-none d-xl-block fb-social" src="./assets/images/desktop/face-white-05.png" alt="syfte_fb_profile">
+                            <img class="w-50 social-fb d-none d-md-block d-xl-none fb-social" src="./assets/images/tablet/face-white-05.png" alt="syfte_fb_profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-50"></div>
+        <footer>
+            <div class="row text-center address">
+                <div class="col-sm">
+                    <a class="offset-xl-7" href="mailto:info@syftedesigns.com">
+                      info@syftedesigns.com
+                  </a>
+                </div>
+                <div class="col-sm">
+                    <address class="text-white LinotteLight font-14">
+                      3250 NE 1st Ave.
+                      <br>
+                      Suite 305 Caracas, 33137
+                  </address>
+                </div>
+                <div class="col-sm">
+                    <a class="tel" href="tel:+584129986237">+58 412 9986237</a>
+                </div>
+            </div>
+            <div class="space-50"></div>
+            <div class="row text-center">
+                <div class="col-sm">
+                    <h5 class="LinotteLight text-white font-16">
+                        Syfte 2019. Todos los derechos reservados.
+                    </h5>
+                </div>
+                <div class="col-sm">
+                    <h5 class="LinotteLight text-white font-16">
+                        Diseñado por SYFTE/Desarrollado por SYFTE.
+                    </h5>
+                </div>
+            </div>
+            <div class="space-10"></div>
+        </footer>
+    </div>
+    <!-- mobile footer -->
+    <div class="container d-md-none">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="LinotteLight font-22 text-white">
+                    Suscribete a nuestro newsletter
+                </h1>
+            </div>
+        </div>
+        <div class="space-30"></div>
+        <div class="row">
+            <form id="formNewsletterResponsive" ngNativeValidate (ngSubmit)="RegisterNewsletter(newsletter);" #newsletter="ngForm" style="position: relative; left: 1em;" class="form-newsletter-mobile">
+                <div class="form-row">
+                    <div class="col text-center">
+                        <mat-form-field class="input-newsletter text-white LinotteRegular font-18 my-form-field">
+                            <input type="email" ngModel required name="email" matInput placeholder="Correo Electrónico">
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="LinotteRegular font-weight-bold btn-newsletter" mat-raised-button>Suscribirme</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="space-20"></div>
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="text-white LinotteLight font-22">Síguenos en</h1>
+            </div>
+        </div>
+        <!-- social media -->
+        <div class="space-20"></div>
+        <div class="row">
+            <div class="col text-center">
+                <a target="_blank" href="https://www.instagram.com/syftedesigns/?hl=es">
+                    <img class="social-ig ig-social" src="./assets/images/mobile/Instagram-05.png" alt="syfte_fb_profile">
+                </a>
+            </div>
+            <div class="col text-center">
+                <a target="_blank" href="https://www.facebook.com/syftedesigns/">
+                    <img class="fb-social" src="./assets/images/mobile/face-05.png" alt="syfte_fb_profile">
+                </a>
+            </div>
+            <div class="col text-center">
+                <a target="_blank" href="https://twitter.com/DesignsSyfte">
+                    <img class="social-fb tw-social" src="./assets/images/mobile/twitter-05.png" alt="syfte_tw_profile">
+                </a>
+            </div>
+        </div>
+        <!-- end social media -->
+        <div class="space-20"></div>
+        <footer>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="mailto:info@syftedesigns.com">
+                              info@syftedesigns.com
+                  </a>
+                    <address class="text-white LinotteLight font-14">
+                          3250 NE 1st Ave.
+                          <br>
+                          Suite 305 Caracas, 33137 <br>
+                          <a class="tel" href="tel:+584129986237">
+                                  +58 412 9986237
+                           </a>
+                  </address>
+                </div>
+            </div>
+            <div class="space-20"></div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5 class="LinotteLight text-white font-14">
+                        Syfte 2019. Todos los derechos reservados
+                    </h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- end mobile footer -->
+</section>

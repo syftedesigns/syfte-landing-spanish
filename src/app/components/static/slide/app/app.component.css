@@ -1,0 +1,51 @@
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .mkt-bg {
+        position: absolute;
+        left: -10%;
+    }
+    .mkt-employer {
+        position: relative;
+        left: -35%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .mkt-employer {
+        position: relative;
+        left: -38%;
+    }
+    .mkt-bg {
+        position: absolute;
+        width: auto;
+        left: -2%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .margin-section {
+        margin-left: 1em
+    }
+    .bg-margin {
+        margin-left: -1.5em
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1480px) {
+    #sticky {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .arrow-800 {
+        position: relative;
+        top: -3.3em
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .desktop-tablet-h {
+        position: relative;
+        top: -6em !important
+    }
+}

@@ -1,0 +1,299 @@
+.about-title {
+    color: #383434 !important;
+}
+
+.about-texts {
+    color: #6c6770 !important
+}
+
+.about-slider {
+    background-image: url(../../../assets/images/desktop/Personajes-2-03.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-list>li {
+    list-style: none;
+    margin-left: -3em;
+    font-family: 'LinotteLight', serif;
+    font-size: 25px;
+    color: #6c6770
+}
+
+.arrow-tablet {
+    width: 150%;
+    position: relative;
+    left: -80%;
+}
+
+.bg-animation:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+    .img-slider {
+        border-radius: 50%;
+        margin-left: 8.5%;
+        margin-top: 10.5%;
+        width: 19%;
+        border: 0px
+    }
+    .arrow-slider {
+        position: relative;
+        top: 15%;
+        margin-left: 40%;
+    }
+    .img-employer {
+        position: absolute;
+        left: -0.5%;
+        z-index: 1000;
+    }
+    .employ-slider {
+        margin-left: -92%;
+        position: relative;
+        top: 1em
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .article-who {
+        margin-left: -25%;
+        position: relative;
+        left: -20em;
+    }
+    .we-do {
+        position: relative;
+        left: 11%;
+        margin-top: 20%
+    }
+    .bg-dispositives {
+        margin-left: -90%
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .article-who {
+        margin-left: -30%;
+        position: relative;
+        left: -8em;
+    }
+    .bg-dispositives {
+        margin-left: -70%
+    }
+    .we-do {
+        position: relative;
+        left: 11%;
+        margin-top: 20%
+    }
+    .circle-yellow {
+        position: absolute;
+        width: 50%
+    }
+    .img-slider {
+        border-radius: 50%;
+        margin-left: 9%;
+        margin-top: 11%;
+        width: 18%;
+        border: 0px
+    }
+    .employ-slider {
+        margin-left: -95%;
+        position: relative;
+        top: 1.5em
+    }
+    .machine {
+        width: 120%
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .article-who {
+        margin-left: -30%;
+        position: relative;
+        left: -8em;
+    }
+    .bg-dispositives {
+        margin-left: -70%
+    }
+    .we-do {
+        position: relative;
+        left: 11%;
+        margin-top: 20%
+    }
+    .circle-yellow {
+        position: absolute;
+        width: 50%
+    }
+    .img-slider {
+        border-radius: 50%;
+        margin-left: 15%;
+        margin-top: 18%;
+        width: 30%;
+        border: 0px
+    }
+    .employ-slider {
+        margin-left: -70%;
+        position: relative;
+        top: 1.5em
+    }
+    .machine {
+        width: 120%
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .circle-yellow {
+        position: absolute;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .about-machine {
+        position: absolute;
+        left: -5%;
+        margin-top: -10%;
+        width: 100%
+    }
+    .img-slider {
+        width: 62%;
+        position: relative;
+        margin-top: 12%;
+        z-index: 1000;
+    }
+    .slider-position {
+        position: relative;
+        top: -40%;
+        left: 32%;
+    }
+    .employ-slider {
+        margin-left: -70%;
+        position: relative;
+        top: -0.5em
+    }
+    .tablet-list>li {
+        list-style: none;
+        margin-left: -3em;
+        font-family: 'LinotteLight', serif;
+        font-size: 18px;
+        color: #6c6770;
+    }
+    .about-tablet-dispositives {
+        width: 160%;
+        margin-left: -20%;
+        margin-top: -10%
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .img-slider {
+        width: 46%;
+        margin-top: 10%
+    }
+    .slider-position {
+        position: relative;
+        top: -40%;
+        left: 25%;
+    }
+    .employ-slider {
+        margin-left: -90%;
+        position: relative;
+        top: -0.5em
+    }
+    .tablet-list>li {
+        list-style: none;
+        margin-left: -3em;
+        font-family: 'LinotteLight', serif;
+        font-size: 25px;
+        color: #6c6770;
+    }
+    .about-tablet-dispositives {
+        width: 160%;
+        margin-left: -20%;
+        margin-top: -10%
+    }
+    .about-machine {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {
+    .img-slider {
+        width: 68%;
+        position: relative;
+        top: 2.8em;
+    }
+    .slider-position {
+        position: relative;
+        top: -48%;
+        left: 12%;
+    }
+    .slider-label {
+        position: relative;
+        top: 2em;
+        left: -2.5em;
+    }
+    .circle-slider {
+        width: 95%
+    }
+    .services-mg {
+        position: relative;
+        left: 8%;
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 375px) {
+    .img-slider {
+        width: 55%;
+        position: relative;
+        top: 2.8em;
+        left: 1.4em;
+    }
+    .slider-position {
+        position: relative;
+        top: -48%;
+        left: 12%;
+    }
+    .slider-label {
+        position: relative;
+        top: 2.1em;
+        left: -2.5em;
+    }
+    .circle-slider {
+        width: 75%
+    }
+    .services-mg {
+        position: relative;
+        left: 3%;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    .img-slider {
+        width: 55%;
+        position: relative;
+        top: 2.8em;
+        left: 1.7em;
+    }
+    .slider-position {
+        position: relative;
+        top: -48%;
+        left: 12%;
+    }
+    .slider-label {
+        position: relative;
+        top: 2.1em;
+        left: -3.5em;
+    }
+    .circle-slider {
+        width: 75%
+    }
+    .services-mg {
+        position: relative;
+        left: 5%;
+    }
+}

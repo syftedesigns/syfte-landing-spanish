@@ -1,0 +1,37 @@
+@media only screen and (max-width: 320px) {
+    .margin-section {
+        margin-left: 1em
+    }
+    .bg-margin {
+        margin-left: -2em
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+    .footer-ux {
+        margin-top: 1.5%
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .footer-ux {
+        margin-top: -0%
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .arrow-800 {
+        position: relative;
+        top: 1em
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .desktop-tablet-h {
+        position: relative;
+        top: -1.5em !important
+    }
+    .mg-section {
+        margin-top: -5%
+    }
+}

@@ -1,0 +1,215 @@
+<!-- Sticky slider -->
+<div id="wrapper" class="main">
+    <div class="container-fluid">
+        <div *ngFor="let app of SlidePages">
+            <app-marketing *ngIf="app.reference === 'marketing' && app.Displayed"></app-marketing>
+            <app-ux *ngIf="app.reference === 'ux' && app.Displayed"></app-ux>
+            <app-web-design *ngIf="app.reference === 'web_design' && app.Displayed"></app-web-design>
+            <app-branding *ngIf="app.reference === 'branding' && app.Displayed"></app-branding>
+            <app-app *ngIf="app.reference === 'app' && app.Displayed"></app-app>
+            <app-visual *ngIf="app.reference === 'visual' && app.Displayed"></app-visual>
+            <app-backend *ngIf="app.reference === 'backend' && app.Displayed"></app-backend>
+            <app-advertising *ngIf="app.reference === 'adword' && app.Displayed"></app-advertising>
+        </div>
+        <!-- end sticky slider -->
+    </div>
+    <div class="space-80"></div>
+    <!-- cases services -->
+    <section class="bg-landing d-none d-xl-block section-cut">
+        <div class="space-180"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
+                        Creamos <br> experiencias
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-20 landing-texts about-texts text-center">
+                            Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>para
+                            crear una experiencia inolvidable!
+                        </p>
+                    </article>
+                </div>
+                <div class="col-sm">
+                    <figure class="wow slideInRight">
+                        <img style="border: 0px; margin-top: -10%" class="img-thumbnail" src="./assets/images/desktop/video-02.png" alt="syfte_experience">
+                    </figure>
+                </div>
+            </div>
+            <div class="space-200"></div>
+            <div class="space-100"></div>
+            <div class="row">
+                <div class="col-sm">
+                    <figure class="wow slideInUp">
+                        <img style="border: 0px; margin-top: -20%" class="img-thumbnail figure-animate" src="./assets/images/desktop/dibujo-02.png" alt="syfte_mobile">
+                    </figure>
+                </div>
+                <div class="col-sm case2">
+                    <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
+                        Una Idea <br> en tus manos
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-20 landing-texts about-texts text-center">
+                            Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="space-200"></div>
+            <div class="space-50"></div>
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
+                        Tu Negocio <br> Automatizado
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-20 landing-texts about-texts text-center">
+                            En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
+                            sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-sm">
+                    <figure class="offset-xl-1 wow slideInUp">
+                        <img class="backend-figure figure-animate" src="./assets/images/desktop/backend-image.png" alt="syfte_backend">
+                    </figure>
+                </div>
+            </div>
+            <div class="space-80"></div>
+        </div>
+    </section>
+    <!-- end cases services -->
+    <!-- cases tablet -->
+    <section class="d-none d-md-block d-xl-none bg-white hover-hidden section-cut">
+        <div class="space-180"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
+                        Creamos <br> experiencias
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                            Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>para
+                            crear una experiencia inolvidable!
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md">
+                    <figure>
+                        <img class="margin-case1 wow slideInRight" style="width: 130%;" src="./assets/images/tablet/video-02-02.png" alt="syfte_experience">
+                    </figure>
+                </div>
+            </div>
+            <div class="space-200"></div>
+            <div class="row">
+                <div class="col-md">
+                    <figure>
+                        <img class="margin-case1 wow slideInUp" style="width: 130%; margin-left: -20%" src="./assets/images/tablet/dibujo-02-02.png" alt="syfte_mobile">
+                    </figure>
+                </div>
+                <div class="col-md">
+                    <h1 class="Aquatico-Regular font-32  text-center landing-titles wow slideInLeft">
+                        Una Idea en tus manos
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                            Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="space-200"></div>
+            <div class="space-10"></div>
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
+                        Tu negocio <br> Automatizado
+                    </h1>
+                    <div class="space-30"></div>
+                    <article class="wow slideInLeft">
+                        <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                            En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
+                            sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md">
+                    <figure>
+                        <img class="margin-case1 wow slideInUp" style="width: 130%; margin-left: -10%" src="./assets/images/tablet/backend-figure.png" alt="syfte_experience">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="space-50"></div>
+    </section>
+    <!-- end cases tablet -->
+    <!-- cases mobile -->
+    <section class="d-md-none hover-hidden bg-white section-cut">
+        <div class="space-100"></div>
+        <div class="container">
+            <div class="col text-center">
+                <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
+                    Creamos <br> experiencias
+                </h1>
+                <div class="space-30"></div>
+                <article class="wow slideInLeft">
+                    <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                        Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>para
+                        crear una experiencia inolvidable!
+                    </p>
+                </article>
+            </div>
+            <div class="space-50"></div>
+            <div class="col text-center">
+                <figure class="wow slideInUp">
+                    <img src="./assets/images/mobile/video-02.png" alt="syfte_experience">
+                </figure>
+            </div>
+            <div class="space-30"></div>
+            <div class="col text-center">
+                <h1 class="Aquatico-Regular font-25  text-center landing-titles wow slideInLeft">
+                    Una Idea <br> en tus manos
+                </h1>
+                <div class="space-30"></div>
+                <article class="wow slideInLeft">
+                    <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                        Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                    </p>
+                </article>
+            </div>
+            <div class="space-50"></div>
+            <div class="col text-center">
+                <figure class="wow slideInUp">
+                    <img src="./assets/images/mobile/dibujo-02.png" alt="syfte_app">
+                </figure>
+            </div>
+            <div class="space-80"></div>
+            <div class="col text-center">
+                <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
+                    Tu negocio <br> Automatizado
+                </h1>
+                <div class="space-30"></div>
+                <article class="wow slideInLeft">
+                    <p class="LinotteLight font-16 landing-texts about-texts text-center">
+                        En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
+                        sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                    </p>
+                </article>
+            </div>
+            <div class="space-50"></div>
+            <div class="col text-center">
+                <figure class="wow slideInUp">
+                    <img src="./assets/images/mobile/bg-backend.png" alt="syfte_backend">
+                </figure>
+            </div>
+        </div>
+        <div class="space-50"></div>
+    </section>
+    <!-- end cases mobile -->
+</div>

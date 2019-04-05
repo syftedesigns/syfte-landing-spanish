@@ -1,0 +1,68 @@
+#syfte_background {
+    background-image: url(../../../../../assets/images/desktop/maquina-07.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .mkt-bg {
+        position: absolute;
+        left: -40%;
+        margin-top: -25%
+    }
+    .mkt-employer {
+        position: relative;
+        left: -35%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .mkt-employer {
+        position: relative;
+        left: -38%;
+    }
+    .mkt-bg {
+        position: absolute;
+        width: auto;
+        left: -2%;
+        margin-top: -30%
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .margin-section {
+        margin-left: 1em
+    }
+    .bg-margin {
+        margin-left: -2em
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1480px) {
+    .sticky {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .hidde-1600 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .mg-debug {
+        margin-top: -13% !important
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    .desktop-tablet-h {
+        position: relative;
+        top: -3.5em
+    }
+    .mg-section {
+        margin-top: -8%
+    }
+}
