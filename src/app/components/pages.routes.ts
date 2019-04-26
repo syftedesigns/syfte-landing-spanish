@@ -11,7 +11,7 @@ const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        data: {Title: 'Construimos tu marca'}
+        data: {Title: 'Construimos tu negocio'}
     },
     {
         path: 'nosotros',

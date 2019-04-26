@@ -59,7 +59,7 @@ export class ContactComponent implements OnInit, OnDestroy {
             duration: 5000,
             panelClass: ['success-snackbar']
           });
-          this._router.navigate(['/thank']);
+          this._router.navigate(['/enviado']);
         } else {
           this.snackBar.open('Ops! We have problems to process your data. Please try again', null, {
             duration: 5000,

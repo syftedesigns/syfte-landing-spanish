@@ -1,4 +1,4 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { PagesComponent } from './components/pages.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: '',
         component: PagesComponent,
-        loadChildren: './components/pages.module#PagesModule'
+        loadChildren: './components/pages.module#PagesModule',
     },
     {
         path: '**',
@@ -15,5 +15,6 @@ const routes: Routes = [
 ];
 
 export const SYFTE_ROUTES = RouterModule.forRoot(routes, {
-    useHash: true
+    useHash: true,
+    preloadingStrategy: PreloadAllModules
 });

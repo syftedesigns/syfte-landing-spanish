@@ -16,7 +16,7 @@
                         </li>
                         <li *ngIf="!_menu.DarkMenu" class="nav-item">
                             <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/']" class="navbar-brand">
-                                <img style="position: relative; left: 0.5em; margin-top: -15%" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Syfte_brand">
+                                <img style="position: relative; left: 0.5em; margin-top: -15%" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Nuestro logotipo de marketing negro">
                             </a>
                         </li>
                         <li class="nav-item">
@@ -24,6 +24,20 @@
                         </li>
                         <li class="nav-item">
                             <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/contacto']" class="nav-link LinotteRegular font-25">Contacto</a>
+                        </li>
+                        <li *ngIf="!_menu.DarkMenu" class="nav-item dropdown pointer">
+                            <a title="Translation" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="nav-link LinotteRegular font-25 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    language
+                                </i>&nbsp;Español
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a id="lang-es" style="margin-top: -35%; margin-left: 1% !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="dropdown-item LinotteRegular font-25" href="https://www.syftedesigns.com/">
+                                    <i class="material-icons">
+                                        arrow_right
+                                    </i>&nbsp;Ingles
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -45,18 +59,18 @@
                 </div>
                 <div class="col-sm col-3">
                     <a [routerLink]="['/']" class="navbar-brand">
-                        <img *ngIf="!_menu.DarkMenu" class="menu-brand offset-lg-4 offset-md-2 d-none d-md-block" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Syfte_brand">
-                        <img id="brand" style="margin-top: -30%" class="d-md-none offset-3" src="./assets/images/mobile/Logo-10.png" alt="Syfte_brand">
+                        <img *ngIf="!_menu.DarkMenu" class="menu-brand offset-lg-4 offset-md-2 d-none d-md-block" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Nuestro logotipo de marketing negro">
+                        <img id="brand" style="margin-top: -30%" class="d-md-none offset-3" src="./assets/images/mobile/Logo-10.png" alt="Nuestro logotipo de marketing negro">
                     </a>
                 </div>
                 <div class="col-sm col-3 offset-3 offset-sm-0 div-language">
                     <nav class="offset-md-7">
                         <div class="row menu-language language language-mobile2">
                             <div class="col-md-2 col-2 default">
-                                <a style="font-weight: bold" class="font-16 active LinotteLight text-white">En</a>
+                                <a [routerLink]="['/']" style="font-weight: bold" class="font-16 active LinotteLight text-white">Es</a>
                             </div>
                             <div class="col-md-2 col-2 default">
-                                <a class="font-16 LinotteLight text-white">Es</a>
+                                <a href="https://www.syftedesigns.com/" class="font-16 LinotteLight text-white">En</a>
                             </div>
                         </div>
                     </nav>
@@ -89,7 +103,7 @@
         <ul class="one margin-one">
             <li class="brand-overlay">
                 <a (click)="ToRouting('');" class="nav-links">
-                    <img src="./assets/images/tablet/logo-white.png" alt="Syfte_brand">
+                    <img src="./assets/images/tablet/logo-white.png" alt="Nuestro logotipo de marketing blanco">
                 </a>
             </li>
             <li (click)="ToRouting('');"><a class="nav-links pointer">Inicio</a></li>
@@ -111,17 +125,17 @@
             <div class="row text-center offset-md-2 offset-2">
                 <div class="col-md-3 col-3 text-white">
                     <a href="https://www.instagram.com/syftedesigns/?hl=es" target="_blank">
-                        <img class="ig-social" src="./assets/images/tablet/Iconos-11.png" alt="syfte_ig">
+                        <img class="ig-social" src="./assets/images/tablet/Iconos-11.png" alt="Nuestra marca en instagram">
                     </a>
                 </div>
                 <div class="col-md-3 col-3 text-white">
                     <a href="https://twitter.com/DesignsSyfte" target="_blank">
-                        <img class="tw-social" src="./assets/images/tablet/Iconos-12.png" alt="syfte_twitter">
+                        <img class="tw-social" src="./assets/images/tablet/Iconos-12.png" alt="Nuestra marca en twitter">
                     </a>
                 </div>
                 <div class="col-md-3 col-3 text-white">
                     <a href="https://www.facebook.com/syftedesigns/" target="_blank">
-                        <img class="fb-social" src="./assets/images/tablet/Iconos-13.png" alt="syfte_fb">
+                        <img class="fb-social" src="./assets/images/tablet/Iconos-13.png" alt="Nuestra marca en facebook">
                     </a>
                 </div>
             </div>

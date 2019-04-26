@@ -17,6 +17,7 @@ import { ButtonSliderComponent } from './button-slider/button-slider.component';
 import { ContactHistoryComponent } from './contact-history/contact-history.component';
 import { AngularMaterialModule } from 'src/app/angular-material.module';
 import { FormsModule } from '@angular/forms';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     VisualComponent,
     WebDesignComponent,
     ButtonSliderComponent,
-    ContactHistoryComponent
+    ContactHistoryComponent,
+    VideoComponent
   ],
   exports: [
     FooterComponent,
@@ -51,7 +53,8 @@ import { FormsModule } from '@angular/forms';
     VisualComponent,
     WebDesignComponent,
     ButtonSliderComponent,
-    ContactHistoryComponent
+    ContactHistoryComponent,
+    VideoComponent
   ],
   entryComponents: [
     AdvertisingComponent,
@@ -60,7 +63,8 @@ import { FormsModule } from '@angular/forms';
     BrandingComponent,
     UxComponent,
     VisualComponent,
-    WebDesignComponent
+    WebDesignComponent,
+    VideoComponent
   ]
 })
 export class StaticModule { }

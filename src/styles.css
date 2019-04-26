@@ -884,5 +884,25 @@ Custom theme
     background: #0ea347
 }
 
+.show {
+    background-color: transparent !important;
+    border: 0px;
+    margin-top: -20%
+}
+
+.dropdown-menu .show>a {
+    display: none !important
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #cecece;
+    text-decoration: underline
+}
+
+.videoPopup .mat-dialog-container {
+    background-color: rgba(54, 56, 57, 0.7) !important;
+}
+
 
 /* End custom theme */

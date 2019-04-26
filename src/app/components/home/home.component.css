@@ -11,6 +11,10 @@
     animation: pulse 1s;
 }
 
+.btn-movie {
+    background-color: #4d5050
+}
+
 @media only screen and (min-width: 1600px) {
     .backend-figure {
         border: 0px;
@@ -55,6 +59,9 @@
     .margin-case1 {
         margin-top: -20%
     }
+    .btn-watch-m {
+        margin-left: 25%
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -75,5 +82,23 @@
     .section-cut {
         position: relative;
         top: 1.8em
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .btn-watch-d {
+        display: block;
+    }
+    .btn-watch-d2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1275px) {
+    .btn-watch-d {
+        display: none;
+    }
+    .btn-watch-d2 {
+        display: block;
     }
 }
