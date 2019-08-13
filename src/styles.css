@@ -139,6 +139,10 @@ Set Fonts fast
     font-size: 22px;
 }
 
+.font-12 {
+    font-size: 12px;
+}
+
 .font-17 {
     font-size: 17px;
 }
@@ -622,8 +626,7 @@ Custom theme
         background-repeat: no-repeat;
     }
     .theme-about {
-        background-image: url(./assets/images/desktop/Fondo-about.png);
-        background-size: cover;
+        background-image: url(./assets/images/desktop/contact-new-bg.png);
         background-repeat: no-repeat;
     }
     .theme-contact {
@@ -690,9 +693,9 @@ Custom theme
         background-repeat: no-repeat;
     }
     .theme-about {
-        background-image: url(./assets/images/tablet/Fondo-about.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        /*background-image: url(./assets/images/tablet/bg-about2.png);
+        background-repeat: no-repeat;*/
+        background-color: #191919;
     }
     .theme-contact {
         background-image: url(./assets/images/tablet/bg-tablet-contact.png);
@@ -730,7 +733,7 @@ Custom theme
         background-color: #f4f4f4
     }
     .theme-about {
-        background-color: #e4e3e1;
+        background-color: #191919;
     }
 }
 
@@ -902,6 +905,10 @@ Custom theme
 
 .videoPopup .mat-dialog-container {
     background-color: rgba(54, 56, 57, 0.7) !important;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 

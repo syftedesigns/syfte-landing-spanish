@@ -1,5 +1,5 @@
 <!-- menu desktop -->
-<header *ngIf="!sticky && !_menu.OnPopup" data-wow-duration="0.4s" #stickyMenu [ngClass]="{'offset-xl-2': !_menu.DarkMenu, 'offset-xl-5': _menu.DarkMenu, 'dark-menu-mg': _menu.DarkMenu}" class="d-none d-xl-block wow slideInDown">
+<header *ngIf="!sticky && !_menu.OnPopup" data-wow-duration="0.4s" #stickyMenu [ngClass]="{'offset-xl-1': !_menu.DarkMenu, 'offset-xl-5': _menu.DarkMenu, 'dark-menu-mg': _menu.DarkMenu}" class="d-none d-xl-block wow slideInDown">
     <div class="container">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light color-visual-design text-center">
@@ -9,30 +9,36 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/']" class="nav-link LinotteRegular font-25">Inicio</a>
+                            <a style="color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/']" class="nav-link LinotteRegular font-25">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/nosotros']" class="nav-link LinotteRegular font-25">Nosotros</a>
+                            <a style="color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/nosotros']" class="nav-link LinotteRegular font-25">Nosotros</a>
                         </li>
                         <li *ngIf="!_menu.DarkMenu" class="nav-item">
-                            <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/']" class="navbar-brand">
-                                <img style="position: relative; left: 0.5em; margin-top: -15%" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Nuestro logotipo de marketing negro">
+                            <a style="color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/']" class="navbar-brand">
+                                <img title="Syfte Brand" src="./assets/images/desktop/syfte-logo-white.png" alt="Syfte-Logo">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/casos']" class="nav-link LinotteRegular font-25">Casos</a>
+                            <!--<a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/casos']" class="nav-link LinotteRegular font-25">
+                                Casos
+                            </a>-->
+                            <a style="color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" href="https://www.syftedesigns.com/campaign/services/" class="nav-link LinotteRegular font-25">
+                                Servicios
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/contacto']" class="nav-link LinotteRegular font-25">Contacto</a>
+                            <a style="color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" [routerLink]="['/contacto']" class="nav-link LinotteRegular font-25">Contacto</a>
                         </li>
                         <li *ngIf="!_menu.DarkMenu" class="nav-item dropdown pointer">
-                            <a title="Translation" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="nav-link LinotteRegular font-25 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a style="color: white !important" title="Translation" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="nav-link LinotteRegular font-25 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                                 <i class="material-icons">
                                     language
                                 </i>&nbsp;Español
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a id="lang-es" style="margin-top: -35%; margin-left: 1% !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="dropdown-item LinotteRegular font-25" href="https://www.syftedesigns.com/">
+                                <a id="lang-es" style="margin-top: -35%; margin-left: 1% !important; color: white !important" [ngClass]="{'text-dark': !_menu.DarkMenu, 'text-white': _menu.DarkMenu}" class="dropdown-item LinotteRegular font-25" href="https://www.syftedesigns.com/">
                                     <i class="material-icons">
                                         arrow_right
                                     </i>&nbsp;Ingles
@@ -53,14 +59,15 @@
             <div class="space-60"></div>
             <div class="row text-center">
                 <div class="col-sm col-3">
-                    <i (click)="ToggleOverlayMenu($event);" class="material-icons toggle-menu-style font-45 pointer">
+                    <i (click)="ToggleOverlayMenu($event);" [ngClass]="{'text-dark': _menu.IsContactPage, 'text-white': !_menu.IsContactPage}" class="material-icons toggle-menu-style font-45 pointer">
                       dehaze
                   </i>
                 </div>
                 <div class="col-sm col-3">
                     <a [routerLink]="['/']" class="navbar-brand">
-                        <img *ngIf="!_menu.DarkMenu" class="menu-brand offset-lg-4 offset-md-2 d-none d-md-block" title="Syfte Brand" src="./assets/images/desktop/logo-05.png" alt="Nuestro logotipo de marketing negro">
-                        <img id="brand" style="margin-top: -30%" class="d-md-none offset-3" src="./assets/images/mobile/Logo-10.png" alt="Nuestro logotipo de marketing negro">
+                        <img *ngIf="!_menu.DarkMenu" class="menu-brand offset-lg-4 offset-md-2 d-none d-md-block" title="Syfte Brand" src="./assets/images/desktop/syfte-logo-white.png" alt="Nuestro logotipo de marketing negro">
+                        <img *ngIf="_menu.DarkMenu && _menu.IsContactPage" id="brand" style="margin-top: -30%" class="d-md-none offset-3" src="./assets/images/desktop/syfte-logo.png" alt="Nuestro logotipo de marketing negro">
+                        <img *ngIf="!_menu.IsContactPage" id="brand" style="margin-top: -30%" class="d-md-none offset-3" src="./assets/images/desktop/syfte-logo-white.png" alt="Nuestro logotipo de marketing negro">
                     </a>
                 </div>
                 <div class="col-sm col-3 offset-3 offset-sm-0 div-language">
@@ -108,7 +115,7 @@
             </li>
             <li (click)="ToRouting('');"><a class="nav-links pointer">Inicio</a></li>
             <li (click)="ToRouting('nosotros');"><a class="nav-links pointer">Nosotros</a></li>
-            <li (click)="ToRouting('casos');"><a class="nav-links pointer">Casos</a></li>
+            <li onclick="location.href = 'https://www.syftedesigns.com/campaign/services'"><a class="nav-links pointer">Servicios</a></li>
             <li (click)="ToRouting('contacto');"><a class="nav-links pointer">Contacto</a></li>
         </ul>
         <div class="space-200 d-none d-xl-block h-800"></div>

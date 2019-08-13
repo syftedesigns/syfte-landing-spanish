@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   constructor(private _menu: MenuService, @Inject(DOCUMENT) private document: Document,
   private _contact: ContactService, private snackBar: MatSnackBar, private _router: Router) {
     this._menu.DarkMenu = true;
+    this._menu.IsContactPage = true;
   }
 
   ngOnInit() {
@@ -31,6 +32,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.document.body.removeAttribute('class');
     this._menu.DarkMenu = false;
+    this._menu.IsContactPage = false;
     this.attached = false;
     this.FileName = null;
     this.Attachment = null;

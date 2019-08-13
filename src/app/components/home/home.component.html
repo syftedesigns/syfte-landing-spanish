@@ -1,7 +1,12 @@
 <!-- Sticky slider -->
 <div id="wrapper" class="main">
     <div class="container-fluid">
-        <div *ngFor="let app of SlidePages">
+        <section>
+            <app-home-video></app-home-video>
+        </section>
+        <!-- video home -->
+        <!-- end video home -->
+        <!--<div *ngFor="let app of SlidePages">
             <app-marketing *ngIf="app.reference === 'marketing' && app.Displayed"></app-marketing>
             <app-ux *ngIf="app.reference === 'ux' && app.Displayed"></app-ux>
             <app-web-design *ngIf="app.reference === 'web_design' && app.Displayed"></app-web-design>
@@ -10,83 +15,77 @@
             <app-visual *ngIf="app.reference === 'visual' && app.Displayed"></app-visual>
             <app-backend *ngIf="app.reference === 'backend' && app.Displayed"></app-backend>
             <app-advertising *ngIf="app.reference === 'adword' && app.Displayed"></app-advertising>
-        </div>
+        </div>-->
         <!-- end sticky slider -->
     </div>
     <div class="space-80"></div>
     <!-- cases services -->
-    <section class="bg-landing d-none d-xl-block section-cut">
+    <section class="bg-landing d-none d-xl-block section-cut w-100">
         <div class="space-180"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
-                        Creamos <br> experiencias
+            <div class="row text-center">
+                <div class="col-sm text-center">
+                    <h1 class="Aquatico-Regular font-32 text-center landing-titles wow slideInLeft">
+                        Potenciamos el <br> alcance de tu negocio
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-20 landing-texts about-texts text-center">
-                            Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>&nbsp;para
-                            crear una experiencia inolvidable!
+                            Integramos herramientas de <b>Analytics</b>, donde podremos evaluar el <b>comportamiento de los usuarios con tu negocio</b> y en base a esto, crear una <b>estrategia de ventas basada en el Flywheel</b>, para poder escalar y
+                            crear el famoso efecto <b>“bola de nieve”</b>.
                         </p>
-                        <button style="margin-left: 28%" class="text-uppercase btn-block btn-movie LinotteRegular col-xl-5 text-center btn-watch-d" (click)="openVideo(1024, 500);" mat-raised-button color="primary">
+                        <button style="margin-left: 37%" class="text-uppercase btn-block btn-movie LinotteRegular col-xl-3 text-center btn-watch-d" (click)="openVideo(1024, 500);" mat-raised-button color="primary">
                             <i class="material-icons">
                                     play_arrow
                             </i>&nbsp;
                         Mira el video                    
                     </button>
-                        <button style="margin-left: 28%" class="text-uppercase btn-block btn-movie LinotteRegular col-xl-5 text-center btn-watch-d2" (click)="openVideo(975, 500);" mat-raised-button color="primary">
+                        <button style="margin-left: 37%" class="text-uppercase btn-block btn-movie LinotteRegular col-xl-3 text-center btn-watch-d2" (click)="openVideo(975, 500);" mat-raised-button color="primary">
                             <i class="material-icons">
                                     play_arrow
                             </i>&nbsp;
                         Mira el video                    
                     </button>
                     </article>
-                </div>
-                <div class="col-sm">
-                    <figure class="wow slideInRight">
-                        <img style="border: 0px; margin-top: -10%" class="img-thumbnail" src="./assets/images/desktop/video-02.png" alt="Agencia dedicada a crear estrategias de marketing.">
-                    </figure>
                 </div>
             </div>
             <div class="space-200"></div>
             <div class="space-100"></div>
             <div class="row">
                 <div class="col-sm">
-                    <figure class="wow slideInUp">
-                        <img style="border: 0px; margin-top: -20%" class="img-thumbnail figure-animate" src="./assets/images/desktop/dibujo-02.png" alt="Desarrollo de aplicaciones">
-                    </figure>
-                </div>
-                <div class="col-sm case2">
                     <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
-                        Una Idea <br> en tus manos
+                        Marketing Automation
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-20 landing-texts about-texts text-center">
-                            Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                            <b>Optimizamos todas las tareas y procesos que necesita tu negocio para vender</b>, a través de herramientas y Software que nuestro equipo de desarrollo implementa en tu negocio, con el objetivo de que solo debas <b>encargarte de monitorear los resultados</b>.
                         </p>
                     </article>
+                </div>
+                <div class="col-sm">
+                    <figure class="wow slideInUp offset-xl-1">
+                        <img style="border: 0px" class="img-thumbnail w-100" title="Herramientas y Software de marketing" src="./assets/images/desktop/marketing-automation.gif" alt="Marketing-Automation">
+                    </figure>
                 </div>
             </div>
             <div class="space-200"></div>
             <div class="space-50"></div>
             <div class="row">
                 <div class="col-sm">
-                    <h1 class="Aquatico-Regular font-45 text-center landing-titles wow slideInLeft">
-                        Tu Negocio <br> Automatizado
+                    <h1 class="LinotteRegular font-45 text-center landing-titles wow slideInLeft">
+                        Marketing y Logística
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-20 landing-texts about-texts text-center">
-                            En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
-                            sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                            Esquematizamos tu negocio e ideamos un <b>plan de marketing y lo dividimos en una serie de estrategias, tácticas y objetivos</b> basados en automatizar todo el proceso de <b>venta</b> que necesita tu negocio en los <b>medios digitales</b>.
                         </p>
                     </article>
                 </div>
                 <div class="col-sm">
                     <figure class="offset-xl-1 wow slideInUp">
-                        <img class="backend-figure figure-animate" src="./assets/images/desktop/backend-image.png" alt="Desarrollo de sistemas">
+                        <img class="backend-figure figure-animate" title="Marketing y Logistica" src="./assets/images/desktop/marketing-logistic.gif" alt="Marketing-Logistic">
                     </figure>
                 </div>
             </div>
@@ -95,71 +94,66 @@
     </section>
     <!-- end cases services -->
     <!-- cases tablet -->
-    <section class="d-none d-md-block d-xl-none bg-white hover-hidden section-cut">
+    <section class="d-none d-md-block d-xl-none bg-white hover-hidden section-cut bg-landing">
         <div class="space-180"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md">
                     <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
-                        Creamos <br> experiencias
+                        Potenciamos el <br> alcance de tu negocio
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                            Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>para
-                            crear una experiencia inolvidable!
+                            Integramos herramientas de <b>Analytics</b>, donde podremos evaluar el <b>comportamiento de los usuarios con tu negocio</b> y en base a esto, crear una <b>estrategia de ventas basada en el Flywheel</b>, para poder escalar y
+                            crear el famoso efecto <b>“bola de nieve”</b>.
                         </p>
-                        <button class="text-uppercase btn-block btn-movie LinotteRegular col-lg-5  text-center btn-watch-m" (click)="openVideo(560, 500);" mat-raised-button color="primary">
+                        <button style="margin-left: 30%" class="text-uppercase btn-block btn-movie LinotteRegular col-md-5 col-lg-4  text-center" (click)="openVideo(560, 500);" mat-raised-button color="primary">
                             <i class="material-icons">
                                     play_arrow
                             </i>&nbsp;
-                        Mira el video                   
+                        Mira el video        
                     </button>
                     </article>
-                </div>
-                <div class="col-md">
-                    <figure>
-                        <img class="margin-case1 wow slideInRight" style="width: 130%;" src="./assets/images/tablet/video-02-02.png" alt="Agencia dedicada a crear estrategias de marketing.">
-                    </figure>
                 </div>
             </div>
             <div class="space-200"></div>
             <div class="row">
                 <div class="col-md">
-                    <figure>
-                        <img class="margin-case1 wow slideInUp" style="width: 130%; margin-left: -20%" src="./assets/images/tablet/dibujo-02-02.png" alt="Desarrollo de aplicaciones">
-                    </figure>
-                </div>
-                <div class="col-md">
                     <h1 class="Aquatico-Regular font-32  text-center landing-titles wow slideInLeft">
-                        Una Idea en tus manos
+                        Marketing Automation
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                            Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                            <b>Optimizamos todas las tareas y procesos que necesita tu negocio para vender</b>, a través de herramientas y Software que nuestro equipo de desarrollo implementa en tu negocio, con el objetivo de que solo debas <b>encargarte de monitorear los resultados.</b>
                         </p>
                     </article>
+                </div>
+                <div class="col-md">
+                    <figure>
+                        <img style="border: 0px" class="img-thumbnail w-100 backend-figure" title="Herramientas y Software de marketing" src="./assets/images/desktop/marketing-automation.gif" alt="Marketing-Automation">
+                    </figure>
                 </div>
             </div>
             <div class="space-200"></div>
             <div class="space-10"></div>
-            <div class="row">
+            <div style="margin-top: -10em" class="row">
                 <div class="col-md">
-                    <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
-                        Tu negocio <br> Automatizado
+                    <h1 class="LinotteRegular font-45  text-center landing-titles wow slideInLeft">
+                        Marketing y Logística
                     </h1>
                     <div class="space-30"></div>
                     <article class="wow slideInLeft">
                         <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                            En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
-                            sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                            Esquematizamos tu negocio e ideamos un <b>plan de marketing y lo dividimos en una serie de estrategias, tácticas y objetivos</b> basados en automatizar todo el proceso de <b>venta</b> que necesita tu negocio en los <b>medios digitales</b>.
                         </p>
                     </article>
                 </div>
                 <div class="col-md">
                     <figure>
-                        <img class="margin-case1 wow slideInUp" style="width: 130%; margin-left: -10%" src="./assets/images/tablet/backend-figure.png" alt="Agencia dedicada a crear estrategias de marketing.">
+                        <div class="space-80 d-lg-none"></div>
+                        <img class="backend-figure figure-animate w-100" title="Marketing y Logistica" src="./assets/images/desktop/marketing-logistic.gif" alt="Marketing-Logistic">
                     </figure>
                 </div>
             </div>
@@ -168,17 +162,18 @@
     </section>
     <!-- end cases tablet -->
     <!-- cases mobile -->
-    <section class="d-md-none hover-hidden bg-white section-cut">
+    <section class="d-md-none hover-hidden bg-landing section-cut">
         <div class="space-100"></div>
         <div class="container">
             <div class="col text-center">
-                <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
-                    Creamos <br> experiencias
+                <h1 class="Aquatico-Regular font-22  text-center landing-titles wow slideInLeft">
+                    Potenciamos el <br> alcance de tu negocio
                 </h1>
                 <div class="space-30"></div>
                 <article class="wow slideInLeft">
                     <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                        Conversamos con nuestros clientes para explorar a fondo <strong>ideas, metas y objetivos</strong> y lo asesoramos para que pueda transformar todo en un negocio con pilares solidos uniendo <strong>Diseño Web, Diseño UX/UI, Branding, Diseño Visual y campañas de Marketing</strong>                        para crear una experiencia inolvidable!
+                        Integramos herramientas de <b>Analytics</b>, donde podremos evaluar el <b>comportamiento de los usuarios con tu negocio</b> y en base a esto, crear una <b>estrategia de ventas basada en el Flywheel</b>, para poder escalar y crear
+                        el famoso efecto <b>“bola de nieve”</b>.
                     </p>
                     <button class="text-uppercase btn-block btn-movie LinotteRegular col-9  text-center btn-watch-m" (click)="openVideo(270, 300);" mat-raised-button color="primary">
                         <i class="material-icons">
@@ -189,46 +184,40 @@
                 </article>
             </div>
             <div class="space-50"></div>
-            <div class="col text-center">
-                <figure class="wow slideInUp">
-                    <img src="./assets/images/mobile/video-02.png" alt="Agencia dedicada a crear estrategias de marketing.">
-                </figure>
-            </div>
             <div class="space-30"></div>
             <div class="col text-center">
                 <h1 class="Aquatico-Regular font-25  text-center landing-titles wow slideInLeft">
-                    Una Idea <br> en tus manos
+                    Marketing Automation
                 </h1>
                 <div class="space-30"></div>
                 <article class="wow slideInLeft">
                     <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                        Llévate tu negocio contigo siempre a través de una app y monitorea el funcionamiento de tu negocio con tan solo mirar tu teléfono. En Syfte aplicamos mucho la portabilidad y migramos todo el <strong>potencial de tu negocio a un dispositivo móvil y lo sincronizamos en la nube</strong>.
+                        <b>Optimizamos todas las tareas y procesos que necesita tu negocio para vender</b>, a través de herramientas y Software que nuestro equipo de desarrollo implementa en tu negocio, con el objetivo de que solo debas <b>encargarte de monitorear los resultados</b>.
                     </p>
                 </article>
             </div>
             <div class="space-50"></div>
             <div class="col text-center">
                 <figure class="wow slideInUp">
-                    <img src="./assets/images/mobile/dibujo-02.png" alt="Desarrollo de aplicaciones">
+                    <img style="margin-left: -3em" src="./assets/images/mobile/marketing-automation-mobile.gif" alt="Desarrollo de aplicaciones">
                 </figure>
             </div>
             <div class="space-80"></div>
             <div class="col text-center">
-                <h1 class="Aquatico-Regular font-36  text-center landing-titles wow slideInLeft">
-                    Tu negocio <br> Automatizado
+                <h1 class="LinotteRegular font-36  text-center landing-titles wow slideInLeft">
+                    Marketing y Logística
                 </h1>
                 <div class="space-30"></div>
                 <article class="wow slideInLeft">
                     <p class="LinotteLight font-16 landing-texts about-texts text-center">
-                        En <strong>Syfte</strong>, construimos <strong>CRUDS, Datos a tiempo real, PWA (Aplicación Web Progresiva), API REST,
-                        sistemas con NodeJS, Express, Java, .NET, PHP, Entre otros.</strong> Ofrecemos cada tecnología en particular según la necesidad del cliente.
+                        Esquematizamos tu negocio e ideamos un <b>plan de marketing y lo dividimos en una serie de estrategias, tácticas y objetivos</b> basados en automatizar todo el proceso de <b>venta</b> que necesita tu negocio en los <b>medios digitales</b>.
                     </p>
                 </article>
             </div>
             <div class="space-50"></div>
             <div class="col text-center">
                 <figure class="wow slideInUp">
-                    <img src="./assets/images/mobile/bg-backend.png" alt="Desarrollo de sistemas">
+                    <img src="./assets/images/mobile/marketing-logistic.gif" alt="Desarrollo de sistemas">
                 </figure>
             </div>
         </div>

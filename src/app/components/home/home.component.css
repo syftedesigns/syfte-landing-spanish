@@ -48,9 +48,10 @@
         margin-top: -20%
     }
     .bg-landing {
-        background-image: url(../../../assets/images/desktop/bg-landing2.png) !important;
-        background-size: cover;
+        background-image: url(../../../assets/images/desktop/bg-home-update.png) !important;
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
         background-color: white;
     }
 }
@@ -76,12 +77,28 @@
         position: relative;
         top: 1.8em
     }
+    .bg-landing {
+        background-image: url(../../../assets/images/tablet/bg-landing-tablet.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-color: white;
+    }
+    .backend-figure {
+        margin-top: -20%
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .section-cut {
         position: relative;
         top: 1.8em
+    }
+    .bg-landing {
+        background-image: url(../../../assets/images/mobile/bg-landing-mobile.png) !important;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: white;
     }
 }
 
